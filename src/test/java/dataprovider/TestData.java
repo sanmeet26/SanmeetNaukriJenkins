@@ -13,5 +13,6 @@ public final class TestData {
     public static final String PROFILE_SUMMARY = "I have 2+ years of experience as an Automation Test Engineer, specializing in Selenium, Java, and test framework development. Skilled in creating robust automated scripts, streamlining testing processes, and integrating them into CI/CD pipelines. I excel at ensuring software quality, identifying bugs early, and improving release efficiency. A team player with strong problem-solving skills, I look forward to opportunities where I can contribute to innovative testing solutions and enhance user experience in my next role.";
 
     private TestData() {
+
     }
 }
