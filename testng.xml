@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.framework.listeners.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/home/punamgunjal/IdeaProjects/Selenium-AiFramework">
+        <classes>
+            <class name="testcases.UpdateProfileTestCase">
+                <methods>
+                    <include name="loginNaukri"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

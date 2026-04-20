@@ -1,0 +1,108 @@
+2026-04-20 22:05:46 [main] INFO  com.framework.listeners.TestListener - ========== SUITE STARTED ==========
+2026-04-20 22:05:46 [main] INFO  com.framework.listeners.TestListener - Suite : /home/punamgunjal/IdeaProjects/Selenium-AiFramework
+2026-04-20 22:05:46 [main] INFO  com.framework.listeners.TestListener - Total Tests Scheduled: 1
+2026-04-20 22:05:46 [main] INFO  base.BaseTest - ===== Test Setup Started | Thread: main =====
+2026-04-20 22:05:46 [main] INFO  base.BaseTest - Initializing WebDriver...
+2026-04-20 22:05:46 [main] INFO  com.framework.driver.DriverFactory - Initializing WebDriver for browser: chrome
+2026-04-20 22:05:46 [main] DEBUG com.framework.driver.DriverFactory - Configuring ChromeOptions
+2026-04-20 22:05:50 [main] INFO  com.framework.driver.DriverFactory - ChromeDriver initialized successfully
+2026-04-20 22:05:50 [main] INFO  com.framework.driver.DriverManager - Setting WebDriver for thread: main
+2026-04-20 22:05:50 [main] INFO  base.BaseTest - Navigating to application URL: https://www.naukri.com/
+2026-04-20 22:05:50 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:52 [main] INFO  base.BaseTest - ===== Test Setup Completed =====
+2026-04-20 22:05:52 [main] INFO  com.framework.listeners.TestListener - ========== TEST STARTED ==========
+2026-04-20 22:05:52 [main] INFO  com.framework.listeners.TestListener - Test     : loginNaukri
+2026-04-20 22:05:52 [main] INFO  com.framework.listeners.TestListener - Class    : testcases.UpdateProfileTestCase
+2026-04-20 22:05:52 [main] INFO  com.framework.reports.ExtentManager - ExtentReports instance not found. Initializing...
+2026-04-20 22:05:52 [main] INFO  com.framework.reports.ExtentManager - Creating ExtentReports instance. Report path: /Users/sanmeetwakchaure/Documents/Placement/SanmeetNaukri/reports/extent-report.html
+2026-04-20 22:05:52 [main] INFO  com.framework.reports.ExtentManager - ExtentReports initialized successfully.
+2026-04-20 22:05:52 [main] DEBUG com.framework.reports.ExtentTestManager - Setting ExtentTest for thread 'main': loginNaukri
+2026-04-20 22:05:52 [main] INFO  com.framework.pages.LoginPage - Clicking Home Login button to open login dialog
+2026-04-20 22:05:52 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //a[@id='login_Layer']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:05:52 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:52 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //a[@id='login_Layer']
+2026-04-20 22:05:52 [main] INFO  com.framework.pages.LoginPage - Entering username: wakchauresanmeet3@gmail.com
+2026-04-20 22:05:52 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //input[@placeholder='Enter your active Email ID / Username']] with strategy [VISIBLE], timeout [10s]
+2026-04-20 22:05:52 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:52 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:52 [main] DEBUG com.framework.utils.ElementActions - Element already present in DOM, skipping progressive scroll: By.xpath: //input[@placeholder='Enter your active Email ID / Username']
+2026-04-20 22:05:52 [main] INFO  com.framework.utils.ElementActions - Scrolled to element (center): By.xpath: //input[@placeholder='Enter your active Email ID / Username']
+2026-04-20 22:05:53 [main] INFO  com.framework.utils.ElementActions - Text entered 'wakchauresanmeet3@gmail.com' into: By.xpath: //input[@placeholder='Enter your active Email ID / Username']
+2026-04-20 22:05:53 [main] INFO  com.framework.pages.LoginPage - Entering password: ****
+2026-04-20 22:05:53 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //input[@placeholder='Enter your password']] with strategy [VISIBLE], timeout [10s]
+2026-04-20 22:05:53 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:53 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:53 [main] DEBUG com.framework.utils.ElementActions - Element already present in DOM, skipping progressive scroll: By.xpath: //input[@placeholder='Enter your password']
+2026-04-20 22:05:53 [main] INFO  com.framework.utils.ElementActions - Scrolled to element (center): By.xpath: //input[@placeholder='Enter your password']
+2026-04-20 22:05:53 [main] INFO  com.framework.utils.ElementActions - Text entered '$An1naukri' into: By.xpath: //input[@placeholder='Enter your password']
+2026-04-20 22:05:53 [main] INFO  com.framework.pages.LoginPage - Clicking Login (submit) button
+2026-04-20 22:05:53 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //button[@type='submit']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:05:53 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:53 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //button[@type='submit']
+2026-04-20 22:05:58 [main] INFO  com.framework.pages.LoginPage - Verifying login success via page title
+2026-04-20 22:05:58 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:58 [main] INFO  com.framework.utils.ElementActions - Page load completed successfully
+2026-04-20 22:05:58 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:58 [main] INFO  com.framework.utils.ElementActions - Page Title: Home | Mynaukri
+2026-04-20 22:05:58 [main] INFO  com.framework.pages.LoginPage - Login verification result — page title: 'home | mynaukri' | logged in: true
+2026-04-20 22:05:58 [main] INFO  com.framework.pages.LoginPage - Clicking user profile icon to open account menu
+2026-04-20 22:05:58 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //img[@alt='naukri user profile img']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:05:58 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:58 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //img[@alt='naukri user profile img']
+2026-04-20 22:05:58 [main] INFO  com.framework.pages.LoginPage - Clicking 'View & Update Profile' link
+2026-04-20 22:05:58 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //a[normalize-space()='View & Update Profile']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:05:58 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:59 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //a[normalize-space()='View & Update Profile']
+2026-04-20 22:05:59 [main] INFO  com.framework.pages.ProfilePage - Verifying Profile page is loaded via page title
+2026-04-20 22:05:59 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:59 [main] INFO  com.framework.utils.ElementActions - Page load completed successfully
+2026-04-20 22:05:59 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:59 [main] INFO  com.framework.utils.ElementActions - Page Title: Profile | Mynaukri
+2026-04-20 22:05:59 [main] INFO  com.framework.pages.ProfilePage - Profile page load check — title: 'profile | mynaukri' | loaded: true
+2026-04-20 22:05:59 [main] INFO  com.framework.pages.ProfilePage - Uploading resume from path: /Users/sanmeetwakchaure/Documents/Placement/SanmeetNaukri/src/main/resources/testdata/Sanmeet_Wakchaure_Resume.pdf
+2026-04-20 22:05:59 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //input[@value='Update resume']] with strategy [VISIBLE], timeout [10s]
+2026-04-20 22:05:59 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:59 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:05:59 [main] INFO  com.framework.utils.ElementActions - Custom upload button detected — searching for associated input[type=file] near: By.xpath: //input[@value='Update resume']
+2026-04-20 22:05:59 [main] INFO  com.framework.utils.ElementActions - Found hidden input[type=file] — uploading via sendKeys (headless-safe): /Users/sanmeetwakchaure/Documents/Placement/SanmeetNaukri/src/main/resources/testdata/Sanmeet_Wakchaure_Resume.pdf
+2026-04-20 22:05:59 [main] INFO  com.framework.utils.ElementActions - File uploaded successfully: /Users/sanmeetwakchaure/Documents/Placement/SanmeetNaukri/src/main/resources/testdata/Sanmeet_Wakchaure_Resume.pdf
+2026-04-20 22:05:59 [main] INFO  com.framework.pages.ProfilePage - Resume upload triggered successfully
+2026-04-20 22:05:59 [main] INFO  com.framework.pages.ProfilePage - Clicking edit icon for Resume Headline section
+2026-04-20 22:05:59 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //span[contains(text(),'headline')]/following-sibling::span[@class='edit icon']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:05:59 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:00 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //span[contains(text(),'headline')]/following-sibling::span[@class='edit icon']
+2026-04-20 22:06:00 [main] INFO  com.framework.pages.ProfilePage - Entering resume headline: I am an Automation Test Engineer with 2+ years of experience in Selenium, Java, and test framework development for quality assurance.
+2026-04-20 22:06:00 [main] INFO  com.framework.pages.ProfilePage - Clicking Save button to persist changes
+2026-04-20 22:06:00 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //button[normalize-space()='Save']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:06:00 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:00 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //button[normalize-space()='Save']
+2026-04-20 22:06:00 [main] INFO  com.framework.pages.ProfilePage - Clicking Close button to dismiss edit drawer
+2026-04-20 22:06:00 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //div[@class='lightbox profileEditDrawer profileUpdatedProLayer model_open flipOpen']//span[@class='icon'][normalize-space()='CrossLayer']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:06:00 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:01 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //div[@class='lightbox profileEditDrawer profileUpdatedProLayer model_open flipOpen']//span[@class='icon'][normalize-space()='CrossLayer']
+2026-04-20 22:06:01 [main] INFO  com.framework.pages.ProfilePage - Clicking edit icon for Key Skills section
+2026-04-20 22:06:01 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //span[contains(text(),'skills')]/following-sibling::span[@class='edit icon']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:06:01 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:02 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //span[contains(text(),'skills')]/following-sibling::span[@class='edit icon']
+2026-04-20 22:06:02 [main] INFO  com.framework.pages.ProfilePage - Clicking Save button to persist changes
+2026-04-20 22:06:02 [main] DEBUG com.framework.utils.WaitUtil - Waiting for element [By.xpath: //button[normalize-space()='Save']] with strategy [CLICKABLE], timeout [10s]
+2026-04-20 22:06:02 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:02 [main] INFO  com.framework.utils.ElementActions - Normal click successful: By.xpath: //button[normalize-space()='Save']
+2026-04-20 22:06:02 [main] INFO  com.framework.listeners.TestListener - TEST PASSED  : loginNaukri
+2026-04-20 22:06:02 [main] INFO  com.framework.listeners.TestListener - Duration     : 10791 ms
+2026-04-20 22:06:02 [main] INFO  com.framework.listeners.TestListener - ==========================================
+2026-04-20 22:06:02 [main] INFO  base.BaseTest - ===== Test Teardown Started | Thread: main =====
+2026-04-20 22:06:02 [main] INFO  base.BaseTest - Quitting WebDriver and cleaning up ThreadLocal...
+2026-04-20 22:06:02 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:02 [main] INFO  com.framework.driver.DriverFactory - Quitting WebDriver for thread: main
+2026-04-20 22:06:02 [main] DEBUG com.framework.driver.DriverManager - Retrieving WebDriver for thread: main
+2026-04-20 22:06:03 [main] INFO  com.framework.driver.DriverManager - Unloading WebDriver from ThreadLocal for thread: main
+2026-04-20 22:06:03 [main] INFO  com.framework.driver.DriverFactory - WebDriver quit and unloaded successfully
+2026-04-20 22:06:03 [main] INFO  base.BaseTest - ===== Test Teardown Completed =====
+2026-04-20 22:06:03 [main] INFO  com.framework.listeners.TestListener - ========== SUITE FINISHED ==========
+2026-04-20 22:06:03 [main] INFO  com.framework.listeners.TestListener - Suite   : /home/punamgunjal/IdeaProjects/Selenium-AiFramework
+2026-04-20 22:06:03 [main] INFO  com.framework.listeners.TestListener - Passed  : 1
+2026-04-20 22:06:03 [main] INFO  com.framework.listeners.TestListener - Failed  : 0
+2026-04-20 22:06:03 [main] INFO  com.framework.listeners.TestListener - Skipped : 0
+2026-04-20 22:06:03 [main] INFO  com.framework.listeners.TestListener - ====================================
+2026-04-20 22:06:03 [main] DEBUG com.framework.reports.ExtentTestManager - Unloading ExtentTest from thread 'main'

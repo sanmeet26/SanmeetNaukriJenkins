@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+
+    <!-- ===================== PROPERTIES ===================== -->
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Property>
+        <Property name="LOG_FILE">logs/automation.log</Property>
+    </Properties>
+
+    <!-- ===================== APPENDERS ===================== -->
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Rolling File Appender (Industry Standard) -->
+        <RollingFile name="RollingFileAppender"
+                     fileName="logs/automation.log"
+                     filePattern="logs/archive/automation-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+
+            <Policies>
+                <!-- Roll file daily -->
+                <TimeBasedTriggeringPolicy interval="1"/>
+
+                <!-- Roll file when size exceeds 10MB -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <!-- ===================== LOGGERS ===================== -->
+    <Loggers>
+
+        <!-- Framework Logger -->
+        <Logger name="com.framework" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="RollingFileAppender"/>
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="RollingFileAppender"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>
